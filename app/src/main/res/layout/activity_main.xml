@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/linear_layout">
+
+    <!-- Toolbar: -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/ToolbarMain"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/colorPrimary">
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <!--the List (in which we will put cards): -->
+ <ListView
+     android:id="@+id/lvMain"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_marginLeft="10dp"
+     android:layout_marginRight="10dp"
+     android:layout_marginTop="10dp"
+     android:layout_marginBottom="10dp"
+     android:dividerHeight="10dp"
+     android:layout_below="@+id/ToolbarMain"
+     android:divider="@null">
+
+ </ListView>
+
+ <!--button to show date picker: -->
+
+    <!--date display-->
+
+
+    <Button
+        android:id="@+id/pickDateBtn"
+        android:layout_width="109dp"
+        android:layout_height="wrap_content"
+        android:text="@string/dates" />
+
+    <TextView
+        android:id="@+id/dateTv"
+        android:layout_width="108dp"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/pickDateBtn"
+        android:layout_marginRight="-128dp"
+        android:text="@string/de"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/dateTv2"
+        android:layout_width="108dp"
+        android:layout_height="wrap_content"
+        android:text="@string/a"
+        android:layout_alignBottom="@+id/pickDateBtn"
+        android:layout_marginRight="-128dp"
+        android:layout_alignRight="@+id/pickDateBtn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+        />
+
+    <Button
+        android:id="@+id/budgetPeriod"
+        android:layout_width="151dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="147dp"
+        android:layout_marginLeft="147dp"
+        android:layout_toEndOf="@+id/pickDateBtn"
+        android:layout_toRightOf="@+id/pickDateBtn"
+        android:text="@string/createModify" />
+
+</RelativeLayout >
